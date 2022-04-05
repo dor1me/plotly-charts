@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&display=swap');
+
+
+body{
+    font-family: quicksand;
+    background-color:#D7E7EC;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+h2{
+    text-align:center;
+    font-size: 35px;
+}
+
+.scatter{
+    width: 1000px;
+    height: 500px;
+    margin: 20px 150px 100px 150px;
+
+}
+
+.title{
+    text-align: center;
+    font-size: 25px;
+}
+
