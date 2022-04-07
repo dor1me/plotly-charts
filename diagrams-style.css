@@ -16,11 +16,17 @@ h2{
     text-align:center;
     font-size: 35px;
 }
-
+.item {
+    display: inline-block;
+    padding: 20px;
+    width: 400px;
+}
 .scatter{
-    width: 1000px;
-    height: 500px;
-    margin: 20px 150px 100px 150px;
+    width: 400px;
+    height: 250px;
+    display: inline;
+    /*margin: 20px 150px 100px 150px;*/
+    /*margin: 30px auto;*/
 
 }
 
