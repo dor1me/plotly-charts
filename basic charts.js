@@ -880,8 +880,313 @@ function scatter_21(){
       
 }
 
+function scatter_22(){
+    var data = [{
+        values: [19, 26, 55],
+        labels: ['Residential', 'Non-Residential', 'Utility'],
+        type: 'pie'
+      }];
+      
+      var layout = {
+        height: 400,
+        width: 500
+      };
+      
+      Plotly.newPlot('22', data, layout);
+}
 
+function scatter_23(){
+    var allLabels = ['1st', '2nd', '3rd', '4th', '5th'];
 
+    var allValues = [
+      [38, 27, 18, 10, 7],
+      [28, 26, 21, 15, 10],
+      [38, 19, 16, 14, 13],
+      [31, 24, 19, 18, 8]
+    ];
+    
+    var ultimateColors = [
+      ['rgb(56, 75, 126)', 'rgb(18, 36, 37)', 'rgb(34, 53, 101)', 'rgb(36, 55, 57)', 'rgb(6, 4, 4)'],
+      ['rgb(177, 127, 38)', 'rgb(205, 152, 36)', 'rgb(99, 79, 37)', 'rgb(129, 180, 179)', 'rgb(124, 103, 37)'],
+      ['rgb(33, 75, 99)', 'rgb(79, 129, 102)', 'rgb(151, 179, 100)', 'rgb(175, 49, 35)', 'rgb(36, 73, 147)'],
+      ['rgb(146, 123, 21)', 'rgb(177, 180, 34)', 'rgb(206, 206, 40)', 'rgb(175, 51, 21)', 'rgb(35, 36, 21)']
+    ];
+    
+    var data = [{
+      values: allValues[0],
+      labels: allLabels,
+      type: 'pie',
+      name: 'Starry Night',
+      marker: {
+        colors: ultimateColors[0]
+      },
+      domain: {
+        row: 0,
+        column: 0
+      },
+      hoverinfo: 'label+percent+name',
+      textinfo: 'none'
+    },{
+      values: allValues[1],
+      labels: allLabels,
+      type: 'pie',
+      name: 'Sunflowers',
+      marker: {
+        colors: ultimateColors[1]
+      },
+      domain: {
+        row: 1,
+        column: 0
+      },
+      hoverinfo: 'label+percent+name',
+      textinfo: 'none'
+    },{
+      values: allValues[2],
+      labels: allLabels,
+      type: 'pie',
+      name: 'Irises',
+      marker: {
+        colors: ultimateColors[2]
+      },
+      domain: {
+        row: 0,
+        column: 1
+      },
+      hoverinfo: 'label+percent+name',
+      textinfo: 'none'
+    },{
+      values: allValues[3],
+      labels: allLabels,
+      type: 'pie',
+      name: 'The Night Cafe',
+      marker: {
+        colors: ultimateColors[3]
+      },
+      domain: {
+        x: [0.52,1],
+        y: [0, 0.48]
+      },
+      hoverinfo: 'label+percent+name',
+      textinfo: 'none'
+    }];
+    
+    var layout = {
+      height: 400,
+      width: 500,
+      grid: {rows: 2, columns: 2}
+    };
+    
+    Plotly.newPlot('23', data, layout);
+}
+function scatter_24(){
+  var data = [{
+    values: [16, 15, 12, 6, 5, 4, 42],
+    labels: ['US', 'China', 'European Union', 'Russian Federation', 'Brazil', 'India', 'Rest of World' ],
+    domain: {column: 0},
+    name: 'GHG Emissions',
+    hoverinfo: 'label+percent+name',
+    hole: .4,
+    type: 'pie'
+  },{
+    values: [27, 11, 25, 8, 1, 3, 25],
+    labels: ['US', 'China', 'European Union', 'Russian Federation', 'Brazil', 'India', 'Rest of World' ],
+    text: 'CO2',
+    textposition: 'inside',
+    domain: {column: 1},
+    name: 'CO2 Emissions',
+    hoverinfo: 'label+percent+name',
+    hole: .4,
+    type: 'pie'
+  }];
+  
+  var layout = {
+    title: 'Global Emissions 1990-2011',
+    annotations: [
+      {
+        font: {
+          size: 20
+        },
+        showarrow: false,
+        text: 'GHG',
+        x: 0.17,
+        y: 0.5
+      },
+      {
+        font: {
+          size: 20
+        },
+        showarrow: false,
+        text: 'CO2',
+        x: 0.82,
+        y: 0.5
+      }
+    ],
+    height: 400,
+    width: 600,
+    showlegend: false,
+    grid: {rows: 1, columns: 2}
+  };
+  
+  Plotly.newPlot('24', data, layout);
+  
+}
+
+function scatter_25(){
+  var data = [{
+    type: "pie",
+    values: [2, 3, 4, 4],
+    labels: ["Wages", "Operating expenses", "Cost of sales", "Insurance"],
+    textinfo: "label+percent",
+    textposition: "outside",
+    automargin: true
+  }]
+  
+  var layout = {
+    height: 400,
+    width: 400,
+    margin: {"t": 0, "b": 0, "l": 0, "r": 0},
+    showlegend: false
+    }
+  
+  Plotly.newPlot('25', data, layout)
+
+}
+
+function scatter_26(){
+  var trace1 = {
+    x: [1, 2, 3, 4],
+    y: [10, 11, 12, 13],
+    mode: 'markers',
+    marker: {
+      size: [40, 60, 80, 100]
+    }
+  };
+  
+  var data = [trace1];
+  
+  var layout = {
+    title: 'Marker Size',
+    showlegend: false,
+    height: 600,
+    width: 600
+  };
+  
+  Plotly.newPlot('26', data, layout);
+}
+
+function scatter_27(){
+  var trace1 = {
+    x: [1, 2, 3, 4],
+    y: [10, 11, 12, 13],
+    mode: 'markers',
+    marker: {
+      color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
+      opacity: [1, 0.8, 0.6, 0.4],
+      size: [40, 60, 80, 100]
+    }
+  };
+  
+  var data = [trace1];
+  
+  var layout = {
+    title: 'Marker Size and Color',
+    showlegend: false,
+    height: 600,
+    width: 600
+  };
+  
+  Plotly.newPlot('27', data, layout);
+}
+
+function scatter_28(){
+  var trace1 = {
+    x: [1, 2, 3, 4],
+    y: [10, 11, 12, 13],
+    text: ['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
+    mode: 'markers',
+    marker: {
+      color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
+      size: [40, 60, 80, 100]
+    }
+  };
+  
+  var data = [trace1];
+  
+  var layout = {
+    title: 'Bubble Chart Hover Text',
+    showlegend: false,
+    height: 600,
+    width: 600
+  };
+  
+  Plotly.newPlot('28', data, layout);
+}
+
+function scatter_29(){
+  var trace1 = {
+    x: [1, 2, 3, 4],
+    y: [10, 11, 12, 13],
+    text: ['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
+    mode: 'markers',
+    marker: {
+      size: [400, 600, 800, 1000],
+      sizemode: 'area'
+    }
+  };
+  
+  var trace2 = {
+    x: [1, 2, 3, 4],
+    y: [14, 15, 16, 17],
+    text: ['A</br>size: 40</br>sixeref: 0.2', 'B</br>size: 60</br>sixeref: 0.2', 'C</br>size: 80</br>sixeref: 0.2', 'D</br>size: 100</br>sixeref: 0.2'],
+    mode: 'markers',
+    marker: {
+      size: [400, 600, 800, 1000],
+      //setting 'sizeref' to lower than 1 decreases the rendered size
+      sizeref: 2,
+      sizemode: 'area'
+    }
+  };
+  
+  var trace3 = {
+    x: [1, 2, 3, 4],
+    y: [20, 21, 22, 23],
+    text: ['A</br>size: 40</br>sixeref: 2', 'B</br>size: 60</br>sixeref: 2', 'C</br>size: 80</br>sixeref: 2', 'D</br>size: 100</br>sixeref: 2'],
+    mode: 'markers',
+    marker: {
+      size: [400, 600, 800, 1000],
+      //setting 'sizeref' to less than 1, increases the rendered marker sizes
+      sizeref: 0.2,
+      sizemode: 'area'
+    }
+  };
+  
+  // sizeref using above forumla
+  var desired_maximum_marker_size = 40;
+  var size = [400, 600, 800, 1000];
+  var trace4 = {
+    x: [1, 2, 3, 4],
+    y: [26, 27, 28, 29],
+    text: ['A</br>size: 40</br>sixeref: 1.25', 'B</br>size: 60</br>sixeref: 1.25', 'C</br>size: 80</br>sixeref: 1.25', 'D</br>size: 100</br>sixeref: 1.25'],
+    mode: 'markers',
+    marker: {
+      size: size,
+      //set 'sizeref' to an 'ideal' size given by the formula sizeref = 2. * max(array_of_size_values) / (desired_maximum_marker_size ** 2)
+      sizeref: 2.0 * Math.max(...size) / (desired_maximum_marker_size**2),
+      sizemode: 'area'
+    }
+  };
+  
+  var data = [trace1, trace2, trace3, trace4];
+  
+  var layout = {
+    title: 'Bubble Chart Size Scaling',
+    showlegend: false,
+    height: 600,
+    width: 600
+  };
+  
+  Plotly.newPlot('29', data, layout);
+}
 
 
 
@@ -918,5 +1223,14 @@ document.addEventListener('DOMContentLoaded', function(){
     scatter_23();
     scatter_24();
     scatter_25();
+    scatter_26();
+    scatter_27();
+    scatter_28();
+    scatter_29();
+    scatter_30();
+    scatter_31();
+    scatter_32();
+    scatter_33();
+    scatter_34();
 
 })

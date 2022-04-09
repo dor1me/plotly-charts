@@ -35,3 +35,27 @@ h2{
     font-size: 25px;
 }
 
+.itempie{
+    display: inline-block;
+    margin:  20px 40px 20px 15px; 
+}
+
+.itembubble{
+    display: inline-block;
+
+    margin: 20px 20px 20px 20px;
+}
+
+.container{
+    text-align: center;
+}
+
+.scatter1{
+    width: 400px;
+    height:280px;
+}
+
+.imgbub{
+    margin-left: 50px;
+    padding: 50px;
+}
