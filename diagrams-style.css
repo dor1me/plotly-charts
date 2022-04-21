@@ -15,24 +15,36 @@ h1{
 h2{
     text-align:center;
     font-size: 35px;
+    margin-bottom:-50px;
 }
 .item {
     display: inline-block;
     padding: 20px;
     width: 400px;
+
 }
 .scatter{
     width: 400px;
     height: 280px;
     display: inline;
+    -webkit-box-shadow: 31px 4px 18px -9px rgba(97, 94, 150, 0.19);
+    -moz-box-shadow: 31px 4px 18px -9px rgba(97, 94, 150, 0.19);
+    box-shadow: 31px 4px 18px -9px rgba(97, 94, 150, 0.19); 
     /*margin: 20px 150px 100px 150px;*/
     /*margin: 30px auto;*/
 
 }
 
 .title{
+    
     text-align: center;
     font-size: 25px;
+    color:black;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+
 }
 
 .itempie{
@@ -53,9 +65,75 @@ h2{
 .scatter1{
     width: 400px;
     height:280px;
+
 }
+
 
 .imgbub{
     margin-left: 50px;
     padding: 50px;
+}
+
+.image{
+    height: 185px;
+    width: 360px;
+    padding:-500px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.speed{
+    display: inline-block;
+    padding: 20px;
+    width: 400px;
+    padding-right: 300px;
+}
+
+.itemwater{
+    display: inline-block;
+    width: 480px;
+    height: 350px;
+    margin:  20px 40px 180px 15px;
+}
+
+.horizontal-water{
+    display: inline-block;
+    width: 900px;
+    height: 350px;
+    margin:  40px 40px 250px 15px;
+}
+
+.waterfall{
+    -webkit-box-shadow: 31px 4px 18px -9px rgba(97, 94, 150, 0.19);
+    -moz-box-shadow: 31px 4px 18px -9px rgba(97, 94, 150, 0.19);
+    box-shadow: 31px 4px 18px -9px rgba(97, 94, 150, 0.19);
+}
+
+.indicator{
+    display: inline-block;
+    margin:20px; 
+
+}
+
+.itemwater1{
+    display: inline-block;
+    width: 600px;
+    height: 350px;
+    margin:  60px 40px 180px 15px;
+}
+
+.itemmain{
+    display: inline-block;
+    width: 360px;
+    height: 185px;
+    margin: 10px;
+
+}
+
+.imgfunnel{
+    display: inline-block;
+
 }

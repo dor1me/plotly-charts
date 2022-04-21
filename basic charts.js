@@ -1,27 +1,4 @@
-function scatter_1(){
-    var trace1 = {
-        x: [1, 2, 3, 4],
-        y: [10, 15, 13, 17],
-        mode: 'markers',
-        type: 'scatter'
-      };
-      
-      var trace2 = {
-        x: [2, 3, 4, 5],
-        y: [16, 5, 11, 9],
-        mode: 'lines',
-        type: 'scatter'
-      };
-      
-      var trace3 = {
-        x: [1, 2, 3, 4],
-        y: [12, 9, 15, 12],
-        mode: 'lines+markers',
-        type: 'scatter'
-      };
-      
-      var data = [trace1, trace2, trace3];
-      
+function scatter_1(data){
       Plotly.newPlot('1', data);
 }
 
@@ -1194,43 +1171,55 @@ function scatter_29(){
 
 
 
+function onData(json) {
+  debugger;
+  console.log(json)
+}
+
+
+document.addEventListener('DOMContentLoaded', function(){
+  fetch('/charts/chart1.json')
+    .then( response => response.json())
+    .then( json => {
+      scatter_1(json);
+    });
+    
 
 
 
-document.addEventListener('DOMContentLoaded', function(){ 
-    scatter_1();
-    scatter_2();
-    scatter_3();
-    scatter_4();
-    scatter_5();
-    scatter_6();
-    scatter_7();
-    scatter_8();
-    //scatter_9();
-    scatter_10();
-    scatter_11();
-    scatter_12();
-    scatter_13();
-    scatter_14();
-    scatter_15();
-    scatter_16();
-    scatter_17();
-    scatter_18();
-    scatter_19();
-    scatter_20();
-    scatter_21();
-    scatter_22();
-    scatter_23();
-    scatter_24();
-    scatter_25();
-    scatter_26();
-    scatter_27();
-    scatter_28();
-    scatter_29();
-    scatter_30();
-    scatter_31();
-    scatter_32();
-    scatter_33();
-    scatter_34();
+    
+    // scatter_2();
+    // scatter_3();
+    // scatter_4();
+    // scatter_5();
+    // scatter_6();
+    // scatter_7();
+    // scatter_8();
+    // //scatter_9();
+    // scatter_10();
+    // scatter_11();
+    // scatter_12();
+    // scatter_13();
+    // scatter_14();
+    // scatter_15();
+    // scatter_16();
+    // scatter_17();
+    // scatter_18();
+    // scatter_19();
+    // scatter_20();
+    // scatter_21();
+    // scatter_22();
+    // scatter_23();
+    // scatter_24();
+    // scatter_25();
+    // scatter_26();
+    // scatter_27();
+    // scatter_28();
+    // scatter_29();
+    // scatter_30();
+    // scatter_31();
+    // scatter_32();
+    // scatter_33();
+    // scatter_34();
 
 })
