@@ -114,7 +114,7 @@ a{
 
 .indicator{
     display: inline-block;
-    margin:20px; 
+    margin:20px;
 
 }
 
@@ -135,5 +135,16 @@ a{
 
 .imgfunnel{
     display: inline-block;
+    margin: 20px;
 
+}
+
+.imgfunnel1{
+    display:inline-block;
+    height: 185px;
+    width:360px;
+}
+
+.funnel1{
+    margin-top: 100px;
 }
