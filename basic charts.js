@@ -1171,10 +1171,10 @@ function scatter_29(){
 
 
 
-function onData(json) {
-  debugger;
-  console.log(json)
-}
+// function onData(json) {
+//   debugger;
+//   console.log(json)
+// }
 
 
 document.addEventListener('DOMContentLoaded', function(){
