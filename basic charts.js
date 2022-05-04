@@ -1181,13 +1181,13 @@ document.addEventListener('DOMContentLoaded', function(){
   // fetch('/charts/chart1.json')
   //   .then( response => response.json())
   //   .then( json => {
-      scatter_1(json);
+      
     // });
     
 
 
 
-    
+    scatter_1();
     scatter_2();
     scatter_3();
     scatter_4();

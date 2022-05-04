@@ -865,7 +865,15 @@ function candle5(){
 }
 
 
-
+// document.addEventListener('DOMContentLoaded', function(){
+  // fetch('/charts/chart1.json')
+  //   .then( response => response.json())
+  //   .then( json => {
+  //     waterfall_01();
+  //     waterfall_02();
+  //     waterfall3();
+  //   });
+    
 
 document.addEventListener('DOMContentLoaded', function(){
     waterfall_01();
@@ -891,4 +899,4 @@ document.addEventListener('DOMContentLoaded', function(){
     time1();
     time2();
     time3();
-})
+})//})
